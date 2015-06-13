@@ -132,8 +132,7 @@ PRODUCT_PACKAGES += \
 # Delegation for OEM customization
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.name \
-    ro.product.manufacturer \
-    ro.product.model
+    ro.product.manufacturer
 	
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
