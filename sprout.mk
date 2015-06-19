@@ -129,15 +129,13 @@ PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck \
 
-# Delegation for OEM customization
+# Dynamically set props
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.name \
     ro.product.manufacturer
 
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-PRODUCT_PACKAGES += Torch
 
 # call the proprietary setup
 $(call inherit-product, vendor/google/sprout/sprout-vendor.mk)
